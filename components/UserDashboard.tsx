@@ -53,6 +53,171 @@ const tableRows = [
     purpose: 'Official',
     photo: 'https://randomuser.me/api/portraits/men/31.jpg',
   },
+  {
+    id: 2,
+    name: 'Yogesh Sharma',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 3,
+    name: 'Demo User',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 4,
+    name: 'Demo User',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+   {
+    id: 5,
+    name: 'Pradeep Tamta',
+    passNumber: '219121',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 6,
+    name: 'Yogesh Sharma',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 7,
+    name: 'Demo User',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 8,
+    name: 'Demo User',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+   {
+    id: 9,
+    name: 'Pradeep Tamta',
+    passNumber: '219121',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 10,
+    name: 'Yogesh Sharma',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 11,
+    name: 'Demo User',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
+  {
+    id: 12,
+    name: 'Demo User',
+    passNumber: '219122',
+    mobile: '9876543210',
+    department: 'IT',
+    secretary: 'Amit Singh',
+    psName: 'Suresh Kumar',
+    identityProof: 'PAN',
+    identityProofNumber: 'ABCDE1234F',
+    visitingDate: '21/12/2024',
+    visitingTime: '10:00 AM',
+    purpose: 'Official',
+    photo: 'https://randomuser.me/api/portraits/men/31.jpg',
+  },
 ];
 
 const visitorDetailsData = {
@@ -83,10 +248,8 @@ export function UserDashboard({ navigation }: UserDashboardProps) {
 
       <ScrollView className="flex-1" contentContainerStyle={{ paddingBottom: 80 }}>
         <View className="mb-2 mt-4 flex-row items-center justify-between px-4">
-          <Text className="text-xl font-bold text-[#222]">Dashboard kiii </Text>
+          <Text className="text-xl font-bold text-[#222]">Dashboard</Text>
           <TouchableOpacity className="rounded-full bg-gray-100 p-2">
-            {' '}
-            q
             <Ionicons name="notifications-outline" size={20} color="#FF7A1A" />
           </TouchableOpacity>
         </View>
@@ -113,35 +276,45 @@ export function UserDashboard({ navigation }: UserDashboardProps) {
         </View>
 
         <View className="mb-1 mt-2 flex-row items-center justify-between px-4">
-          <Text className="text-base font-bold text-[#222]">Daily ma Table</Text>
+          <Text className="text-base font-bold text-[#222]">Daily Pass Table</Text>
           <TouchableOpacity className="p-2">
             <Feather name="search" size={18} color="#A0AEC0" />
           </TouchableOpacity>
         </View>
 
-        <View className="mx-4 mb-4 overflow-hidden rounded-xl border border-gray-200">
-          <View className="flex-row gap-28 bg-[#F7F9FB] px-2 py-2">
-            <Text className="flex-1 text-base font-semibold text-gray-500">Sr No</Text>
-            <Text className="flex-2 text-base font-semibold text-gray-500">Name</Text>
-            <Text className="flex-1 text-base font-semibold text-gray-500">Details</Text>
-          </View>
-          {tableRows.map((row) => (
-            <View
-              key={row.id}
-              className="flex-row gap-20 border-t border-gray-100 bg-white px-2 py-2">
-              <Text className="flex-1 text-xs text-[#222]">{row.id}</Text>
-              <Text className="flex-2 text-xs text-[#222]">{row.name}</Text>
-              <TouchableOpacity
-                className="flex-1"
-                onPress={() => {
-                  setSelectedVisitor(row);
-                  setModalVisible(true);
-                }}>
-                <Text className="text-xs font-semibold text-[#FF7A1A]">View Details</Text>
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
+    <View className="mx-4 mb-4 overflow-hidden rounded-xl border border-gray-200">
+  <View className="flex-row gap-20 bg-[#F7F9FB] px-2 py-2">
+    <Text className="flex-1 text-base font-semibold text-zinc-800">Sr No</Text>
+    <Text className="flex-1 text-base font-semibold text-zinc-800">Name</Text>
+    <Text className="flex-2 text-base font-semibold text-zinc-800">Details</Text>
+  </View>
+
+  {tableRows.map((row, index) => (
+    <View
+      key={row.id}
+      className={`flex-row gap-20 border-t border-gray-100 px-2 py-2 ${
+        index % 2 === 0 ? 'bg-white' : 'bg-[#F7F9FB]'
+      }`}>
+      <Text className="flex-1 text-base text-zinc-800">{row.id}</Text>
+      <Text className="flex-2 text-base text-[#222]">{row.name}</Text>
+
+      <TouchableOpacity
+        className="flex-2"
+        onPress={() => {
+          setSelectedVisitor(row);
+          setModalVisible(true);
+        }}>
+        <Text className="text-base font-semibold text-[#FF7A1A]">
+          View Details
+        </Text>
+      </TouchableOpacity>
+    </View>
+  ))}
+</View>
+
+
+
+mujhe table k hr ek row ko chodker ek row ka bg color  bg-[#F7F9FB] ye chahiye
       </ScrollView>
       <VisitorDetailsModal
         visible={modalVisible}
@@ -151,7 +324,7 @@ export function UserDashboard({ navigation }: UserDashboardProps) {
         onReject={() => {}}
       />
 
-      <BottomNav className="bottom-1" active="Dashboard" navigation={navigation} />
+      <BottomNav active="Dashboard" navigation={navigation} />
     </View>
   );
 }
