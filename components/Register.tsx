@@ -93,7 +93,7 @@ export default function Register({ navigation }: any) {
   const handleSubmit = () => {
     if (validate()) {
       Alert.alert('Success', 'Form submitted successfully!');
-      navigation.navigate('UserDashboard'); // ✅ Change accordingly
+      navigation.navigate('UserDashboard');
     }
   };
 
@@ -193,7 +193,7 @@ export default function Register({ navigation }: any) {
       </View>
       {errors.confirmMpin && <Text className="text-xs text-red-500 mb-2">{errors.confirmMpin}</Text>}
 
-=      <Text className="mb-1 text-[#222]">Identity Proof Number</Text>
+     <Text className="mb-1 text-[#222]">Identity Proof Number</Text>
       <TextInput
         value={identityNumber}
         onChangeText={setIdentityNumber}
@@ -229,7 +229,7 @@ export default function Register({ navigation }: any) {
 
       <View className="items-center mt-2 mb-6">
         <Text className="text-base text-[#222]">
-          I have an account?{' '}
+          I have an account?
           <Text
             className="text-[#FF7A1A] font-semibold"
             onPress={() => navigation.navigate('Login')}

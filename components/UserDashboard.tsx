@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons';
 import { useState } from 'react';
 import VisitorDetailsModal from './VisitorDetails';
@@ -98,7 +98,7 @@ const tableRows = [
     purpose: 'Official',
     photo: 'https://randomuser.me/api/portraits/men/31.jpg',
   },
-   {
+  {
     id: 5,
     name: 'Pradeep Tamta',
     passNumber: '219121',
@@ -158,7 +158,7 @@ const tableRows = [
     purpose: 'Official',
     photo: 'https://randomuser.me/api/portraits/men/31.jpg',
   },
-   {
+  {
     id: 9,
     name: 'Pradeep Tamta',
     passNumber: '219121',
@@ -282,39 +282,33 @@ export function UserDashboard({ navigation }: UserDashboardProps) {
           </TouchableOpacity>
         </View>
 
-    <View className="mx-4 mb-4 overflow-hidden rounded-xl border border-gray-200">
-  <View className="flex-row gap-20 bg-[#F7F9FB] px-2 py-2">
-    <Text className="flex-1 text-base font-semibold text-zinc-800">Sr No</Text>
-    <Text className="flex-1 text-base font-semibold text-zinc-800">Name</Text>
-    <Text className="flex-2 text-base font-semibold text-zinc-800">Details</Text>
-  </View>
+        <View className="mx-4 mb-4 overflow-hidden rounded-xl border border-gray-200">
+          <View className="flex-row gap-20 bg-[#F7F9FB] px-2 py-2">
+            <Text className="flex-1 text-base font-semibold text-zinc-800">Sr No</Text>
+            <Text className="flex-1 text-base font-semibold text-zinc-800">Name</Text>
+            <Text className="flex-2 text-base font-semibold text-zinc-800">Details</Text>
+          </View>
 
-  {tableRows.map((row, index) => (
-    <View
-      key={row.id}
-      className={`flex-row gap-20 border-t border-gray-100 px-2 py-2 ${
-        index % 2 === 0 ? 'bg-white' : 'bg-[#F7F9FB]'
-      }`}>
-      <Text className="flex-1 text-base text-zinc-800">{row.id}</Text>
-      <Text className="flex-2 text-base text-[#222]">{row.name}</Text>
+          {tableRows.map((row, index) => (
+            <View
+              key={row.id}
+              className={`flex-row gap-20 border-t border-gray-100 px-2 py-2 ${
+                index % 2 === 0 ? 'bg-white' : 'bg-[#F7F9FB]'
+              }`}>
+              <Text className="flex-1 text-base text-zinc-800">{row.id}</Text>
+              <Text className="flex-2 text-base text-[#222]">{row.name}</Text>
 
-      <TouchableOpacity
-        className="flex-2"
-        onPress={() => {
-          setSelectedVisitor(row);
-          setModalVisible(true);
-        }}>
-        <Text className="text-base font-semibold text-[#FF7A1A]">
-          View Details
-        </Text>
-      </TouchableOpacity>
-    </View>
-  ))}
-</View>
-
-
-
-mujhe table k hr ek row ko chodker ek row ka bg color  bg-[#F7F9FB] ye chahiye
+              <TouchableOpacity
+                className="flex-2"
+                onPress={() => {
+                  setSelectedVisitor(row);
+                  setModalVisible(true);
+                }}>
+                <Text className="text-base font-semibold text-[#FF7A1A]">View Details</Text>
+              </TouchableOpacity>
+            </View>
+          ))}
+        </View>
       </ScrollView>
       <VisitorDetailsModal
         visible={modalVisible}

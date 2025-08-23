@@ -6,6 +6,10 @@ import { UserDashboard } from '../components/UserDashboard';
 import OfficerLogin from 'components/OfficerLogin';
 import VisitorDetailsModal from 'components/VisitorDetails';
 import AppHeader from 'components/AppHeader';
+import UpdateSecretary from 'components/UpdateSecretary';
+import CreatePass from 'components/CreatePass';
+import EditProfile from 'components/EditProfile';
+import SecretaryReport from 'components/SecretaryReport';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +23,11 @@ export default function AppNavigator() {
         <Stack.Screen name="OfficerLogin" component={OfficerLogin} />
         <Stack.Screen name="VisitorDetail" component={VisitorDetailsModal} />
         <Stack.Screen name="AppHeader" component={AppHeader} />
+        <Stack.Screen name="UpdateSecretary" component={UpdateSecretary} />
+        <Stack.Screen name="CreatePass" component={CreatePass} />
+        <Stack.Screen name="EditProfile" component={EditProfile} />
+        <Stack.Screen name="SecretaryReport" component={SecretaryReport} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

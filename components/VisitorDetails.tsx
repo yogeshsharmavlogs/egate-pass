@@ -7,14 +7,12 @@ export default function VisitorDetailsModal({ visible, onClose, data, onApprove,
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
       <View className="flex-1 items-center justify-center bg-black/30">
         <View className="w-[90%] rounded-2xl bg-white p-5">
-          {/* Header */}
           <View className="mb-4 flex-row items-center justify-between">
             <Text className="text-xl font-bold">Visitor Details</Text>
             <TouchableOpacity onPress={onClose}>
               <Ionicons name="close" size={28} color="#222" />
             </TouchableOpacity>
           </View>
-          {/* Photo */}
           <View className="mb-4 items-center">
             <Image
               source={{ uri: data.photo }}
@@ -22,7 +20,6 @@ export default function VisitorDetailsModal({ visible, onClose, data, onApprove,
               resizeMode="cover"
             />
           </View>
-          {/* Details */}
           <View className="mb-4 flex-row flex-wrap">
             <View className="mb-2 w-1/2">
               <Text className="text-xs text-gray-500">Visitor Name</Text>
@@ -77,7 +74,6 @@ export default function VisitorDetailsModal({ visible, onClose, data, onApprove,
               <Text>--</Text>
             </View>
           </View>
-          {/* Approve/Reject Buttons */}
           <View className="mt-2 flex-row justify-between">
             <TouchableOpacity
               className="mr-2 flex-1 rounded-lg bg-green-500 py-3"
