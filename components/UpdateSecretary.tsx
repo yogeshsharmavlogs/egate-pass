@@ -1,9 +1,8 @@
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import AppHeader from './AppHeader';
-import BottomNav from './BottomNav';
 
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import Layout from './Layout';
 
 type Props = {
   navigation: NativeStackNavigationProp<any>;
@@ -11,9 +10,7 @@ type Props = {
 
 export default function UpdateSecretary({ navigation }: Props) {
   return (
-    <View className="flex-1 bg-white">
-      <AppHeader />
-
+    <Layout navigation={navigation} active="UpdateSecretary" className="flex-1 bg-white">
       <View className="px-4 pt-6">
         <Text className="text-xl font-bold text-[#222] mb-6">Update Secretary</Text>
 
@@ -39,8 +36,6 @@ export default function UpdateSecretary({ navigation }: Props) {
           <Text className="text-white text-center font-semibold text-base">Update</Text>
         </TouchableOpacity>
       </View>
-
-       <BottomNav active="UpdateSecretary" navigation={navigation} />
-    </View>
+    </Layout>
   );
 }

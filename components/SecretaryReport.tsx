@@ -8,8 +8,7 @@ import {
   Modal,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import BottomNav from "./BottomNav";
-import AppHeader from "./AppHeader";
+import Layout from "./Layout";
 
 export default function SecretaryReport({ navigation }: any) {
   const [tableRows] = useState([
@@ -46,9 +45,7 @@ export default function SecretaryReport({ navigation }: any) {
   const [selectedVisitor, setSelectedVisitor] = useState<any>(null);
 
   return (
-    <View className="flex-1 bg-white">
-      <AppHeader />
-
+    <Layout navigation={navigation} active="SecretaryReport" className="flex-1 bg-white">
       <View className="flex-row items-center justify-between px-4 pt-6 pb-4">
         <Text className="text-xl font-bold text-[#222]">Report</Text>
         <View className="flex-row items-center space-x-3">
@@ -189,8 +186,6 @@ export default function SecretaryReport({ navigation }: any) {
           </View>
         </View>
       </Modal>
-
-      <BottomNav active="SecretaryReport" navigation={navigation} />
-    </View>
+    </Layout>
   );
 }

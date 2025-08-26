@@ -1,12 +1,10 @@
 import { View, Text, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import AppHeader from './AppHeader';
-import BottomNav from './BottomNav';
+import Layout from './Layout';
 
 export default function CreatePass({ navigation }: any) {
   return (
-    <View className="flex-1 bg-white">
-      <AppHeader />
+    <Layout navigation={navigation} active="CreatePass" className="flex-1 bg-white">
       <ScrollView className="flex-1" contentContainerStyle={{ paddingBottom: 100 }}>
         <View className="px-4 pt-6">
           <Text className="text-xl font-bold text-[#222] mb-4">Create Pass</Text>
@@ -143,7 +141,6 @@ export default function CreatePass({ navigation }: any) {
           </TouchableOpacity>
         </View>
       </ScrollView>
-      <BottomNav active="CreatePass" navigation={navigation} />
-    </View>
+    </Layout>
   );
 }

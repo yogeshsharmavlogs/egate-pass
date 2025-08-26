@@ -2,9 +2,8 @@ import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
 import { Ionicons, Feather } from '@expo/vector-icons';
 import { useState } from 'react';
 import VisitorDetailsModal from './VisitorDetails';
-import BottomNav from './BottomNav';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import AppHeader from './AppHeader';
+import Layout from './Layout';
 
 const passes = [
   {
@@ -243,9 +242,7 @@ export function UserDashboard({ navigation }: UserDashboardProps) {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedVisitor, setSelectedVisitor] = useState<any>(null);
   return (
-    <View className="flex-1 bg-white">
-      <AppHeader />
-
+    <Layout navigation={navigation} active="Dashboard" className="flex-1 bg-white">
       <ScrollView className="flex-1" contentContainerStyle={{ paddingBottom: 80 }}>
         <View className="mb-2 mt-4 flex-row items-center justify-between px-4">
           <Text className="text-xl font-bold text-[#222]">Dashboard</Text>
@@ -317,8 +314,6 @@ export function UserDashboard({ navigation }: UserDashboardProps) {
         onApprove={() => {}}
         onReject={() => {}}
       />
-
-      <BottomNav active="Dashboard" navigation={navigation} />
-    </View>
+    </Layout>
   );
 }
