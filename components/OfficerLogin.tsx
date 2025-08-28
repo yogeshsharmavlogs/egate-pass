@@ -43,7 +43,7 @@ export default function OfficerLogin({ navigation }: any) {
 
   const handleSubmit = () => {
     if (validate()) {
-      navigation.navigate('OfficerDashboard');
+      navigation.navigate('AdminDashboard');
     }
   };
 

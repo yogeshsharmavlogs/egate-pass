@@ -10,6 +10,8 @@ import UpdateSecretary from 'components/UpdateSecretary';
 import CreatePass from 'components/CreatePass';
 import EditProfile from 'components/EditProfile';
 import SecretaryReport from 'components/SecretaryReport';
+import { AdminDashboard } from 'components/AdminDashboard';
+import CreateOptionsScreen from 'components/CreateOptionsScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,7 +29,7 @@ export default function AppNavigator() {
         <Stack.Screen name="CreatePass" component={CreatePass} />
         <Stack.Screen name="EditProfile" component={EditProfile} />
         <Stack.Screen name="SecretaryReport" component={SecretaryReport} />
-
+        <Stack.Screen name="AdminDashboard" component={AdminDashboard} />
       </Stack.Navigator>
     </NavigationContainer>
   );
